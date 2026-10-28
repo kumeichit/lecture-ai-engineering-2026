@@ -1,0 +1,1551 @@
+{
+  "summary": {
+    "label": "before",
+    "n": 171,
+    "format_rate": 0.029239766081871343,
+    "content_rate": 0.023391812865497075,
+    "both_rate": 0.023391812865497075,
+    "seconds": 448.5
+  },
+  "rows": [
+    {
+      "question": "リランキングを簡単に説明してください",
+      "raw": "{\"answer\": \"リランキングは、最初の検索結果から最初に見つけた候補を、質問との関連度や他の評価指標で再度評価し、最終的な順位を並べる処理です。検索結果の精度を高めるために使われます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "lrとは何のパラメータですか？",
+      "raw": "{\"answer\": \"学習率\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "バッチサイズについて教えてください",
+      "raw": "{\"answer\": \"学習で1回のパラメータ更新に使うデータの数。大きいほど1ステップが安定する一方、必要なGPUメモリも増える。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "ツール名にプレフィックスを付けるのはなぜですか？",
+      "raw": "{\"answer\": \"ツール名にプレフィックスを付けるのは、ツールが特定の用途や役割を明確に示すため、モデルが適切なツールを認識し、適切な関数呼び出しを行うための明確な指示を提供するからです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "docstringはツールの中でどんな役割を持ちますか？",
+      "raw": "{\"answer\": \"docstring はツールの中で定義された出力の説明や用途を示す情報であり、ユーザーがツールをどのように使用するかを理解するために提供されます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "温度パラメータは何を調整する設定ですか？",
+      "raw": "{\"answer\": \"温度パラメータは、モデルの出力の分布を調整する設定です。LLM は出力の確率分布を制御するために温度パラメータを設定します。温度が低いほど出力が特定の値に集中し、温度が高いほど出力の分布が広くなります。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "LLMでいうトークンって何のことですか？",
+      "raw": "{\"answer\": \"LLM（大規模言語モデル）がテキストを扱う最小単位は「トークン」です。API の料金、レート制限、コンテキストウィンドウの大きさは、多くの場合トークン数で数えるため、日本語は英語より1文字あたりのトークン数が多くなりやすい。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "PRって何ですか？",
+      "raw": "{\"answer\": \"PR（Pull Request）は、本講座では回ごとに lec01 のような作業ブランチを作ることで、主 branch を壊さずに変更を試し、まとまったら main に取り込む仕組みです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "バッチサイズについて教えてください",
+      "raw": "{\"answer\": \"確認が必要\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "Codespacesのシークレットについて教えてください",
+      "raw": "{\"answer\": \"Codespaces のシークレットは、`codespaces` 環境の `secrets` 設定ファイル（`.env`）に記述されます。`secrets` は環境変数のみで、`codespaces` 環境のシークレットは `secrets` 設定ファイルに記述されます。`secrets` は環境変数のみで、`codespaces` 環境のシークレットは `secrets`",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "Chain-of-Thought（思考の連鎖）を簡単に説明してください",
+      "raw": "{\"answer\": \"Chain-of-Thought（思考の連鎖）は、最終的な答えだけでなく、その答えに至る途中の推論の手順を段階的に書かせるプロンプトの工夫です。複雑な計算や論理的な問題で正答率が上がりやすい特徴があります。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "Model Context Protocolについて教えてください",
+      "raw": "{\"answer\": \"MCP は AI アプリと外部ツールやデータソースをつなぐためのオープンな標準プロトコルです。MCP サーバーとして公開したツールは、対応する様々なエージェントやエディタから共通の方法で使える。第5回で、用語集の検索を MCP サーバーにして体験する。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "LoRAのrって何ですか？",
+      "raw": "{\"answer\": \"LoRA の r は低ランク行列のサイズ（ハイパーパラメータ）で、大きいほど表現力が上がるが、学習するパラメータとメモリも増えるため、学習効率を考慮して適正な値を調整する必要がある。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "Parameter-Efficient Fine-Tuningとは何ですか？",
+      "raw": "{\"answer\": \"Parameter-Efficient Fine-Tuning (PEFT) は、ベースモデルの重みを4ビットなどに量子化してメモリを節約し、LoRA（低精度ロジック拡張）で学習する手法です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "知識蒸留とはどういうものですか？",
+      "raw": "{\"answer\": \"知識蒸留とは、学習データや知識を抽出・整理し、その中で重要な情報を抽出して再学習するプロセスです。本講座では、学習支援エージェントを題材に、知識蒸留を回すことで、回をまたいでこのサイクルを回す。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "エージェントにおけるguardrailの意味を教えてください",
+      "raw": "{\"answer\": \"guardrail は、エージェントが処理する際に守るべきルールや制限を指します。Pydantic AI では、このルールを定義する際に「guardrail」パラメータを指定することで、エージェントが特定の行動（例：特定の文脈で発言する、特定の形式で出力する）を避けることができます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "devcontainer.jsonは何のための仕組みですか？",
+      "raw": "{\"answer\": \"devcontainer.json は、GitHub Codespaces などの開発環境を構築するための仕組みです。ブラウザから VS Code を開くことで、repo に書かれた設定どおりの環境をすぐに使えるため、開発者がすぐに環境を構築できるためです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "コードスペースって何ですか？",
+      "raw": "{\"answer\": \"コードスペースは、LLM（大規模言語モデル）が学習するパラメータの数を指します。学習するパラメータが増えるほど、コードスペースが大きくなります。",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "三角形の内角の和は何度ですか？",
+      "raw": "{\"answer\": \"180\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "エージェントにおけるguardrailの意味を教えてください",
+      "raw": "{\"answer\": \"guardrail はエージェントが望ましくない行動や出力をしないように設ける制約や検査です。指示文でのルール、ツールの権限を絞る、出力をチェックする、重要な操作の前に人の確認を挟む、などの方法がある。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "MCPホストとは何ですか？",
+      "raw": "{\"answer\": \"確認が必要\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "うるう年とはどんな年ですか？",
+      "raw": "{\"answer\": \"確認が必要\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "agent loopについて教えてください",
+      "raw": "{\"answer\": \"エージェントループは、モデルが最終回答を返すまで、モデルを呼び出し結果を戻すというサイクルを繰り返す処理です。1つの質問でLLMを複数回呼ぶため、時間・料金・レート制限への影響が大きい。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "深層学習（ディープラーニング）の意味を教えてください",
+      "raw": "{\"answer\": \"深層学習（Deep Learning）は、人工知能において学習を自動化するための手法です。従来の機械学習では、データからパターンを抽出する必要があるため、学習の初期段階から複雑な構造を学習する必要があるため、データ量が膨大になりすぎて学習が困難になることが知られています。深層学習は、ニューロン（神经元）の層を多層に配置し、各層が他の層の情報を受け取り、複雑な",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "外部サービスをツールとして使うとは、どういうことですか？",
+      "raw": "{\"answer\": \"外部サービスは、本講座で説明されているように、MCP サーバーに接続し、公開されたツールをモデルに渡して呼び出す側です。これにより、エージェントのプログラム（Pydantic AI の MCPToolset）や、Copilot Chat・Claude Desktop・Cursor などのエディタやアプリがクライアントになることで、同じサーバーをどのクライアントからも使えるのが利点です。",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "branchの役割を教えてください",
+      "raw": "{\"answer\": \"fork\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "フォークとは何をすることですか？",
+      "raw": "{\"answer\": \"他人の repo を自分のアカウントに丸ごとコピーすること\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "HF Hubは何ができるサービスですか？",
+      "raw": "{\"answer\": \"HF Hub は、公開されたモデルやデータセットを共有・ダウンロードできるプラットフォームです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "深層学習（ディープラーニング）の意味を教えてください",
+      "raw": "{\"answer\": \"深層学習（ディープラーニング）は、多くの層を重ねたニューラルネットワークを用いた機械学習の手法で、画像認識や音声認識、言語処理などで高い性能を出します。LLM もこの手法で学習されます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "大規模言語モデルについて教えてください",
+      "raw": "{\"answer\": \"LLM（大規模言語モデル）は、大量のテキストで学習し、入力に続くトークンを予測することで文章を生成するモデルです。質問応答、要約、コード生成など多くのタスクを、指示（プロンプト）を変えるだけでこなせる。トークンはテキストを扱う最小単位で、API の料金やレート制限、コンテキストウィンドウの大きさは、多くの場合トークン数で数える。事前",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "Function callingとは何ですか？",
+      "raw": "{\"answer\": \"モデルがツール呼び出しを呼ぶ仕組みです。モデルはツールの名前・説明・引数の型を見て、必要なときに引数を決めて呼び出しを依頼し、実行はプログラム側が行う。検索、計算、ファイル操作、外部APIの呼び出しなどに使う。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "quantizationの意味を教えてください",
+      "raw": "{\"answer\": \"量子化：モデルの重みを少ないビット数（例：16ビットから4ビット）で表し、メモリ使用量や計算量を減らす技術。精度は少し下がることがある。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "教師なし学習を簡単に説明してください",
+      "raw": "{\"answer\": \"教師なし学習は、正解ラベルがないデータから、そのデータの構造やまとまり（パターン）を自動的に抽出する学習方法です。例えば、似たデータをグループに分けるクラスタリングや、特徴量から類似度を計算して類似のものを抽出する手法などが該当します。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "429エラーが出るのは、どういう制限のせいですか？",
+      "raw": "{\"answer\": \"レート制限（リクエスト数やトークン数の上限）\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "AIコーディングエージェントはどんな仕組みのAIですか？",
+      "raw": "{\"answer\": \"LLMが自分で判断してツールを呼び出し、その結果を見てさらに次の行動を決める、というループで目的を達成するシステム。基本構造は「モデル＋ループ＋ツール」\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "コンテキスト長の意味を教えてください",
+      "raw": "{\"answer\": \"コンテキスト長は、LLMがテキストを扱う最小単位であるトークン数で、API の料金やレート制限、コンテキストウィンドウの大きさは、多くの場合トークン数で数える。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "promptについて説明してください",
+      "raw": "{\"answer\": \"LLM（大規模言語モデル）が事実と異なる内容や存在しない情報を、もっともらしく生成してしまう現象は「ハルシネーション（Hallucination）」と呼ばれます。この現象はモデルが知らない情報（最新情報、組織固有の情報など）を誤って生成してしまうためです。ハルシネーションを防ぐためには、外部データをツールで参照させる、根拠を示させる、評価で検出する、などの対策",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "埋め込み（エンベディング）について教えてください",
+      "raw": "{\"answer\": \"埋め込み（エンベディング）は、テキストを最小単位として扱う際に、単語や文字の断片に分割されたトークンに埋め込むことで、モデルがテキストを認識・理解する仕組みです。日本語は英語より1文字あたりのトークン数が多くなりやすいため、埋め込みの精度が重要になります。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "Codespacesのシークレットについて教えてください",
+      "raw": "{\"answer\": \"Codespaces secret は、GitHub のアカウント設定に登録しておき、指定した repo の Codespaces を起動すると環境変数として渡される秘密の値です。登録時に自分の fork を選択し、起動中に Codespaces の再起動が必要になります。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "AI Engineeringって、どんな分野のことですか？",
+      "raw": "{\"answer\": \"AI Engineering は、LLM を基盤とした基盤モデルを部品として使い、実際に役立つアプリケーションやシステムを設計・構築・評価・運用する技術分野です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "Web APIとは何のことですか？",
+      "raw": "{\"answer\": \"Web API は、テキストを扱う最小単位であるトークン（LLM）を介して、API の料金、レート制限、コンテキストウィンドウの大きさを数える仕組みです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "追加学習って何ですか？",
+      "raw": "{\"answer\": \"確認が必要\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "PydanticAIについて教えてください",
+      "raw": "{\"answer\": \"Pydantic AI は Python でエージェントを構築するためのフレームワークで、Pydantic の型を使ってツール引数や出力を定義できます。テスト用のモデルで API を呼ばずに動作確認できるため、本講座第 3 回の本線です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "HF Hubは何ができるサービスですか？",
+      "raw": "{\"answer\": \"HF Hub は、大規模言語モデル（LLM）の学習、推理、コード生成、およびコードの生成など、多くのタスクを、指示（プロンプト）を変えるだけでこなせるサービスです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "ゼロショットについて教えてください",
+      "raw": "{\"answer\": \"ゼロショットは、例を1つも示さず、指示だけでモデルにタスクを実行させる使い方です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "1エポックとはどういう意味ですか？",
+      "raw": "{\"answer\": \"1エポックとは、モデルが学習した知識や能力を 1 つのサイクルで完結させること。本講座では、本講座の提出は、自分のfork内で作業ブランチから main へのPRとして行うため、1エポックとは「本講座の提出」という意味です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "幻覚（ハルシネーション）って何ですか？",
+      "raw": "{\"answer\": \"LLM が事実と異なる内容や存在しない情報を、もっともらしく生成してしまう現象。モデルが知らないこと（最新情報、組織や講座に固有の情報など）を聞いたときに起きやすい。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "テスト用モデルとは何ですか？",
+      "raw": "{\"answer\": \"Pydantic AI\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "追加学習って何ですか？",
+      "raw": "{\"answer\": \"ファインチューニングは、事前学習済みモデルを特定のタスクや形式に合ったデータで追加学習させることで、出力の形式や口調、特定ドメインの振る舞いを身につける方法です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "ゼロショットについて教えてください",
+      "raw": "{\"answer\": \"ゼロショットは、モデルが学習した知識やパターンを参照して、新しい問題に対して回答する手法です。ただし、この FAQ には「ゼロショット」の定義や具体的な応用例が記載されていません。そのため、この FAQ に記載が無いことは answer に『確認が必要』と書き、needs_review を true にします。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "フォークとは何をすることですか？",
+      "raw": "{\"answer\": \"本講座では自分のfork内で作業ブランチからmainへのPRとして行う。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "ベンチマークとはどういうものですか？",
+      "raw": "{\"answer\": \"ベンチマークは、モデルの性能を共通の問題セットと指標で測り、他のモデルと比べられるようにした評価の仕組みです。目的に合っているかを確認しないと、実際の用途での良し悪しとはずれることがある。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "ベンチマークとはどういうものですか？",
+      "raw": "{\"answer\": \"ベンチマークとは、AI アプリケーションやシステムがどのように機能するかを比較するための基準や参照物です。本講座では、学習支援エージェントの設計において、実際のアプリケーションやシステムを設計・構築・評価・運用する際に、ベンチマークとして参照する基準となります。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "LoRAのrって何ですか？",
+      "raw": "{\"answer\": \"rは LoRA のリニア化パラメータ（Linearly-Reduced Attention）の記号で、モデルの重みを 4 次元のベクトルとして学習する際に使用されるパラメータです。\"",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "埋め込み（エンベディング）について教えてください",
+      "raw": "{\"answer\": \"埋め込み（エンベディング）は、文章や画像などを意味の近さを反映した数値のベクトルに変換し、ベクトル同士の距離や類似度を計算することで、意味が近い文章の検索や分類を行う手法です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "devcontainer.jsonは何のための仕組みですか？",
+      "raw": "{\"answer\": \"devcontainer.json は、開発環境をコンテナとして定義する仕組みです。devcontainer/devcontainer.json にPythonのバージョンや拡張機能、起動時のコマンドを書いておくと、誰が Codespaces を開いても同じ環境になる。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "PRって何ですか？",
+      "raw": "{\"answer\": \"PRは、作業ブランチの変更を別のブランチへ取り込むよう依頼する仕組みです。本講座では、自分のfork内で作業ブランチからmainへのPRとして行う。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "API keyについて説明してください",
+      "raw": "{\"answer\": \"APIキーは、本講座ではCodespaces secretに登録し、環境変数 GEMINI_API_KEYとして読み込む方法で管理されています。APIを呼び出す人を識別するための秘密情報であり、漏れると他人に利用枠を使われるため、コードに直接書かない、コミットしない、チャットに貼らないことを推奨されています。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "SFTについて説明してください",
+      "raw": "{\"answer\": \"教師ありファインチューニング（SFT）は、入力と望ましい出力のペア（例：質問と模範回答）を使ってモデルを追加学習させる方法です。指示に従う振る舞いを身につけさせる代表的な手法です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "トークナイザーって何ですか？",
+      "raw": "{\"answer\": \"確認が必要\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "quantizationの意味を教えてください",
+      "raw": "{\"answer\": \"確認が必要\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "Pi coding agentとはどんなツールですか？",
+      "raw": "{\"answer\": \"Pi は、ターミナルで動くオープンソースのコーディングエージェントで、最小限の機能とシステムプロンプトで構成し、利用者が拡張して使う設計です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "テスト用モデルとは何ですか？",
+      "raw": "{\"answer\": \"Pydantic AI に含まれるテスト用の偽モデルです。実際のLLMを呼ばずに、ツールを呼び出してダミーの回答を返すことで、API キーや利用枠を使わずにエージェントの配線（ツールが登録され、呼ばれ、結果が返るか）をテストできます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "うるう年とはどんな年ですか？",
+      "raw": "{\"answer\": \"うるう年は2月が29日になり、1年が366日になる年。原則として4で割り切れる年だが、100で割り切れる年は平年で、400で割り切れる年はうるう年。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "バッチサイズについて教えてください",
+      "raw": "{\"answer\": \"バッチサイズは、学習データがどのように処理されるかを定義するハイパーパラメータで、学習率と同等の役割を果たします。バッチサイズが大きすぎると、学習が不安定になり、小さすぎると進みが遅い。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "オーバーフィッティングとはどういう状態ですか？",
+      "raw": "{\"answer\": \"過学習とは、学習データに過度に適合し、未知の入力に対する性能が落ちる状態です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "stdioとStreamable HTTPについて教えてください",
+      "raw": "{\"answer\": \"確認が必要\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "MCP serverとは何ですか？",
+      "raw": "{\"answer\": \"MCPサーバーは、ツール（やリソース、プロンプト）を公開する側のプログラムで、公開されたツールをモデルに渡して、指示に従って実行し結果を返す側です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "PydanticAIについて教えてください",
+      "raw": "{\"answer\": \"PydanticAI は、MCPサーバーとして利用可能なツールをモデルに渡すためのサーバーです。本講座では、PydanticAI の MCPToolset を使用して、エージェントのプログラム（Pydantic AI の MCPToolset）や、Copilot Chat・Claude Desktop・Cursorなどのエディタやアプリがクライアントになることを説明しています。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "3レベルとは何ですか？",
+      "raw": "{\"answer\": \"確認が必要\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "幻覚（ハルシネーション）って何ですか？",
+      "raw": "{\"answer\": \"幻覚（ハルシネーション）とは、光の反射や透過によって見えない物体や影が、光の反射や透過によって見えるように見える現象です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "mcp-server-fetchとは何ですか？",
+      "raw": "{\"answer\": \"fetchサーバーは、指定した URL のページを取得し、その内容を Markdown 形式で返す既存の MCP サーバーです。本講座では「設定ファイルに書くだけで外部ツールが増える」例として利用されます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "MCPホストとは何ですか？",
+      "raw": "{\"answer\": \"MCPホストは、MCPサーバーとして公開されたツールやリソース、プロンプトをモデルに渡して、クライアントの指示に従って実行するプログラムです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "解答ファイルとは何ですか？",
+      "raw": "{\"answer\": \"確認が必要\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "改善サイクルとは、どういう進め方のことですか？",
+      "raw": "{\"answer\": \"改善サイクルとは、AI エージェントが特定のタスクを完了させるために、複数のステップで進めるプロセスです。このサイクルは、まずタスクの理解と指示を、次に実行可能なコードを実行し、結果を確認し、最後に修正や再試行を行うという流れで進めます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "オーバーフィッティングとはどういう状態ですか？",
+      "raw": "{\"answer\": \"確認が必要\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "HITLとは何ですか？",
+      "raw": "{\"answer\": \"確認が必要\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "JSON出力とは何ですか？",
+      "raw": "{\"answer\": \"Pydantic AI の出力形式は、Pydantic の型に基づいて定義された JSON 出力です。Pydantic AI は、モデルの出力を、決めた型や JSONスキーマに沿った形で受け取る仕組みを持ち、プログラムで後処理しやすくなります。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "ゼロショットについて教えてください",
+      "raw": "{\"answer\": \"確認が必要\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "スケーリング則の意味を教えてください",
+      "raw": "{\"answer\": \"スケーリング則とは、AI エージェントが処理する入力データや出力結果に対して、出力のサイズや複雑さを一定に保ちつつ、処理速度を向上させるためのルールや基準のことです。例えば、入力データが 100 個なら、出力結果も 100 個程度に制限し、処理時間を短縮するなどの設計思想を指します。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "JSON出力とは何ですか？",
+      "raw": "{\"answer\": \"確認が必要\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "外部サービスをツールとして使うとは、どういうことですか？",
+      "raw": "{\"answer\": \"外部ツールとは、エージェントのプログラム自体に直接動作しない、外部の Web ページ、データベース、他社の API、ファイル操作、データソースなどを呼び出す機能です。MCP 標準では、これらはプロセスや機械をまたいで呼び出し、共通の規約（MCP）によって対応するエージェントやエディタから共通の方法で使えることを指します。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "ベンチマークとはどういうものですか？",
+      "raw": "{\"answer\": \"ベンチマークとは、特定の AI モデルが特定のタスク（例：コード生成、データ分析、言語理解など）をどのように実行するかを比較するための基準や指標の集まりです。モデルがこれらの基準を満たすか、劣るかを評価するために使用されます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "エージェントハーネスって何ですか？",
+      "raw": "{\"answer\": \"エージェントハーネスとは、複数のエージェントが互いに通信し合い、相互に依存して動作するシステムを指します。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "Transformerって何ですか？",
+      "raw": "{\"answer\": \"Transformer はアテンション機構を中心に構成されたニューラルネットワークの構造で、文章中の離れた語どうしの関係を捉えやすく、並列計算で効率よく学習できるため、多くのLLMの基盤になっています。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "教師なし学習を簡単に説明してください",
+      "raw": "{\"answer\": \"教師なし学習は、データセットから学習したモデルを、新しいデータに対して予測する手法です。モデルは学習プロセスを経て、特定のデータパターンを学習し、そのパターンを新しいデータに対して応答する仕組みです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "指示文（instructions）はどういう役割の入力ですか？",
+      "raw": "{\"answer\": \"システムプロンプトは、LLM に渡す入力文として、モデルの振る舞い（役割、口調、守るべきルールなど）を指定する入力です。Pydantic AI では Agent の instructions 引数で与えるため、指示文（instructions）はシステムプロンプトに含まれるため、この FAQ の根拠に基づくと、システムプロンプトとして回答します。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "docstringはツールの中でどんな役割を持ちますか？",
+      "raw": "{\"answer\": \"ツールの中で docstring はモデルにツールを呼び出す際に、ツールの用途や引数の意味を伝える文章として使われます。Pydantic AI では関数の docstring と型ヒントから自動で作られるため、モデルはこれを読んでツールを使うか、どの引数で呼ぶかを決めるので、書き方次第で挙動が大きく変わる。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "デフォルトモデルは何ですか？",
+      "raw": "{\"answer\": \"デフォルトモデルは「Gemma 2.5」です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "エージェントハーネスって何ですか？",
+      "raw": "{\"answer\": \"LLM の周りをループ・ツール・画面（UI）などで包み、実際に作業できるようにするプログラム。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "教師なし学習を簡単に説明してください",
+      "raw": "{\"answer\": \"教師なし学習は、入力と望ましい出力のペア（例：質問と模範回答）を使ってモデルを追加学習させる方法です。指示に従う振る舞いを身につけさせる代表的な手法です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "Chain-of-Thought（思考の連鎖）を簡単に説明してください",
+      "raw": "{\"answer\": \"Chain-of-Thought（思考の連鎖）は、AI が問題を解決する際に、まず問題の根拠となる情報を整理し、その上で最終的な答えを導き出すプロセスです。AI は一度に複数の情報を処理し、その中で最も重要で正確な情報を抽出し、それを次のステップへと進めることで、より正確な結論を導き出します。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "損失関数って何ですか？",
+      "raw": "{\"answer\": \"損失関数は、モデルの出力と正解とのずれの大きさを 1 つの数値で表す関数で、学習ではこの値が小さくなるようにパラメータを更新する。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "Low-Rank Adaptationについて教えてください",
+      "raw": "{\"answer\": \"Low-Rank Adaptation (LoRA) は、モデルの全パラメータを学習するのではなく、学習するパラメータを「低ランク行列」として表し、その小さな行列だけを学習する手法です。これにより、必要なGPUメモリと保存容量を大きく減らし、学習結果（アダプタ）も小さいファイルで保存できるため、特にGPUメモリが限られている場合や、保存容量が限られている場合が有効",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "三角形の内角の和は何度ですか？",
+      "raw": "{\"answer\": \"180\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "日本の首都はどこですか？",
+      "raw": "{\"answer\": \"東京\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "LLMでいうトークンって何のことですか？",
+      "raw": "{\"answer\": \"トークンは、LLM（大規模言語モデル）が文脈や指示に従って生成する文字列の単位です。1 つのトークンには、単語、文脈、または特定の文脈の要素が含まれることがありますが、単一の単語や文脈単位として定義されています。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "コンテキスト長の意味を教えてください",
+      "raw": "{\"answer\": \"コンテキストウィンドウは、LLMが1回の呼び出しで扱える入力と出力の合計トークン数の上限です。会話履歴やツールの結果もこの中に収める必要があるため、何をモデルに渡すかの設計が重要になる。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "mcp-server-fetchとは何ですか？",
+      "raw": "{\"answer\": \"mcp-server-fetch は、MCP (Model Context Protocol) を基盤とした、LLM（大規模言語モデル）と外部の API を連携させるためのフレームワークです。このフレームワークは、LLM がテキストを扱う最小単位（トークン）を認識し、そのトークンに対して外部の API を呼び出す仕組みを提供します。また、API の料金やレート制限、コンテキストウィンドウの大きさは、多くの",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "ツール名にプレフィックスを付けるのはなぜですか？",
+      "raw": "{\"answer\": \"ツール名にプレフィックスを付けるのは、複数の MCP サーバーを同時に使用する場合、同じ名前を持つツールを区別するために「サーバー名_ツール名」のように接頭辞を付けることで、呼び出しの精度とトークン数を管理するためです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "mcp.jsonは何を書くファイルですか？",
+      "raw": "{\"answer\": \"mcpServers\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "Low-Rank Adaptationについて教えてください",
+      "raw": "{\"answer\": \"Low-Rank Adaptation (LoRA) は、モデルの全パラメータではなく、ごく一部や追加した小さなパラメータだけを学習する手法です。必要なGPUメモリと保存容量を大きく減らせるため、LoRA が代表的な手法です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "深層学習（ディープラーニング）の意味を教えてください",
+      "raw": "{\"answer\": \"深層学習（ディープラーニング）は、大規模言語モデル（LLM）や他の AI モデルを構築する際に、大量のテキストデータから学習したモデルの構造を深層化し、より複雑な表現や抽象的な理解を可能にする技術です。\"",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "水は何度で沸騰しますか？",
+      "raw": "{\"answer\": \"100\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "mcp.jsonは何を書くファイルですか？",
+      "raw": "{\"answer\": \"mcp.json は MCP モデル Context Protocol を定義するファイルです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "Web APIとは何のことですか？",
+      "raw": "{\"answer\": \"Web API は、プログラムから別のサービスの機能を呼び出すための窓口です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "解答ファイルとは何ですか？",
+      "raw": "{\"answer\": \"answer.md\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "損失関数って何ですか？",
+      "raw": "{\"answer\": \"学習率\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "RLHF（人間のフィードバックによる強化学習）の意味を教えてください",
+      "raw": "{\"answer\": \"RLHF（人間のフィードバックによる強化学習）は、LLM などの大規模言語モデルを、人間が指示に従うことと、その出力が望ましいかどうかを評価し、その評価結果に基づいてモデルを再学習する手法です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "日本の首都はどこですか？",
+      "raw": "{\"answer\": \"東京\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "HITLとは何ですか？",
+      "raw": "{\"answer\": \"確認が必要\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "3レベルとは何ですか？",
+      "raw": "{\"answer\": \"AIE2026の宿題の3レベルは、基礎（講義内容の確認）、実装（自分でコードを書く）、発展（調査や試行）の3段階です。どれか1つに取り組めばその回の宿題は完了。原則として採点はしない。\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "AI Engineeringって、どんな分野のことですか？",
+      "raw": "{\"answer\": \"AI Engineering は、AI アプリケーションの開発、設計、および運用に関する分野です。本講座では学習支援エージェントを題材に、評価と改善のサイクル（作る→測る→直す）を回すことで、LLM の出力の確率揺れを考慮し、指標に基づいてプロンプト・データ・モデル・ツールを改善する具体的な方法を説明しています。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "Pi coding agentとはどんなツールですか？",
+      "raw": "{\"answer\": \"Pi coding agent は、LLM の周りをループ・ツール・画面（UI）などで包み、実際に作業できるようにするプログラムです。Pi は組み込みツールを read・write・edit・bash の 4 つに絞った薄いハーネスとして知られる。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "429エラーが出るのは、どういう制限のせいですか？",
+      "raw": "{\"answer\": \"429 エラーは、API のレート制限（リクエスト数制限）や時間制限により発生するエラーです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "マルチモーダルモデルとはどういうものですか？",
+      "raw": "{\"answer\": \"マルチモーダルモデルは、テキストだけでなく、画像、音声、動画、スクリプトなどの多様な形式の情報を同時に処理するモデルです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "RLHF（人間のフィードバックによる強化学習）の意味を教えてください",
+      "raw": "{\"answer\": \"RLHF（人間のフィードバックによる強化学習）は、LLM（大規模言語モデル）が人間が評価した出力の良し悪しに基づき、その出力が人間の好みに近いようになり、安全で有用な応答を生成する手法です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "損失関数って何ですか？",
+      "raw": "{\"answer\": \"損失関数は、モデルが出力した結果と、目標出力との差（誤差）を計算し、その差を最小化するために使われる学習の指標です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "AIでいうエージェントって何ですか？",
+      "raw": "{\"answer\": \"学習支援エージェント\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "スケーリング則の意味を教えてください",
+      "raw": "{\"answer\": \"スケーリング則は、モデルのパラメータ数、学習データ量、計算量が増えるほど、性能が予測可能な規則で向上するという経験則を指します。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "Transformerって何ですか？",
+      "raw": "{\"answer\": \"Transformer は、大規模言語モデル（LLM）の学習において最も重要な構造の一つで、テキストを扱う最小単位である「トークン」を予測する際に使われる構造です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "コードスペースって何ですか？",
+      "raw": "{\"answer\": \"GitHub Codespaces はブラウザから VS Code を開き、repo に書かれた設定どおりの環境をすぐに使えるクラウド上の開発環境です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "stdioとStreamable HTTPについて教えてください",
+      "raw": "{\"answer\": \"stdio は標準入出力でメッセージを交換する手軽な方法で、同じ機械内で使うことができますが、Streamable HTTP はサーバーが待ち受け、異なるプロセスや機械から接続できる公開範囲の方法です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "環境変数（env）の意味を教えてください",
+      "raw": "{\"answer\": \"環境変数（env）は、LLM（大規模言語モデル）が学習する際に使用する外部パラメータのリストです。このリストに含まれる変数は、モデルの出力や入力に対して直接影響を与えるパラメータです。例えば、特定の言語のコード、特定のデータセットのテキスト、あるいは特定のユーザーのIDなど、モデルが学習する際に必要な情報です。",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "pre-trainingとは何をする段階ですか？",
+      "raw": "{\"answer\": \"事前学習\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "Function callingとは何ですか？",
+      "raw": "{\"answer\": \"Function calling は、モデルが特定の関数やツールの呼び出しを指示し、その結果を返す仕組みです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "インライン補完について教えてください",
+      "raw": "{\"answer\": \"GitHub Copilot のインライン補完は、エディタやチャットツールでコードやコメントから続きのコードを提案する機能です。ただし、提案は正しいとは限らず、読解と理解してから採用する必要があります。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "Copilotとはどんなものですか？",
+      "raw": "{\"answer\": \"Copilot は、Hugging Face Hub 上で公開されたモデルやデータセットを共有・ダウンロードできるプラットフォームです。また、MCP（Model Context Protocol）プロトコルを使って AI アプリと外部ツールやデータソースをつなぐためのオープンな標準プロトコルです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "水は何度で沸騰しますか？",
+      "raw": "{\"answer\": \"100℃\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "API keyについて説明してください",
+      "raw": "{\"answer\": \"環境変数と Codespaces secret には API キーが含まれていますが、Pydantic AI のテスト用の TestModel は API キーを使わずにダミーの回答を返すため、API キーの説明は確認が必要です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "トークナイザーって何ですか？",
+      "raw": "{\"answer\": \"確認が必要\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "改善サイクルとは、どういう進め方のことですか？",
+      "raw": "{\"answer\": \"作る→測る→直すを繰り返す開発の進め方。AI アプリは出力が確率的に揺れるため、感覚ではなく評価データや指標で良し悪しを判断し、その結果をもとにプロンプト・データ・モデル・ツールを改善する。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "環境変数（env）の意味を教えてください",
+      "raw": "{\"answer\": \"環境変数は、プログラムの外側（OSや実行環境）で設定し、プログラムから名前で読み出せる値です。APIキーのような秘密情報や、環境ごとに変わる設定をコードから切り離すために使う。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "リランキングを簡単に説明してください",
+      "raw": "{\"answer\": \"リランキングとは、モデルが過去の学習結果（例えば、スコアや確率）を比較して、新しいデータに対して最も高い評価を与える順序を決定するプロセスです。この順序を「リランク」と呼び、モデルがその順序を維持する仕組みを「リランクリング」と呼ばれます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "AIコーディングエージェントはどんな仕組みのAIですか？",
+      "raw": "{\"answer\": \"LLM（大規模言語モデル）に渡す入力文。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "指示文（instructions）はどういう役割の入力ですか？",
+      "raw": "{\"answer\": \"指示文は、LLMに渡す入力文に含まれる役割、制約、出力形式、例などを含めることで、出力を方向づけられる重要な要素です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "マルチモーダルモデルとはどういうものですか？",
+      "raw": "{\"answer\": \"マルチモーダルモデルとは、テキスト、画像、音声、動画、および複数の異なる形式の文脈（例：テキストと画像の組み合わせ）を同時に理解・処理する AI モデルです。これにより、単一の文脈を超えた多角的な情報を統合して回答を生成する能力を備えています。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "リランキングを簡単に説明してください",
+      "raw": "{\"answer\": \"リランキングは、LLM が過去の回答を分析し、その出力の頻度や質に基づいて、ユーザーが最も希望する回答を優先して返す仕組みです。例えば、質問「何を食べるべきか」に対して、回答A が 100 回、回答B が 50 回、回答C が 10 回の場合、リランキングはA を 100 回、B を",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "インライン補完について教えてください",
+      "raw": "{\"answer\": \"インライン補完は、LLMがユーザーの質問やコードを直接入力して、その文脈で自動で補完・生成する機能です。GitHub Copilot のエディタモードやチャットモードで利用できます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "デフォルトモデルは何ですか？",
+      "raw": "{\"answer\": \"gemini-3.5-flash-lite\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "Copilotとはどんなものですか？",
+      "raw": "{\"answer\": \"GitHub Copilot は、GitHub の AI コーディング支援ツールで、エディタでのコード補完、チャットでの質問、エージェントモードでの複数ファイル編集などができる。無料の Copilot Free は、補完の回数とチャットの利用量に上限がある。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "branchの役割を教えてください",
+      "raw": "{\"answer\": \"LLMが1回の呼び出しで扱える入力と出力の合計トークン数の上限。会話履歴やツールの結果もこの中に収める必要があるため、何をモデルに渡すかの設計が重要になる。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "agent loopについて教えてください",
+      "raw": "{\"answer\": \"LLM のエージェントロープ（Agent Loop）は、以下のステップを繰り返すプロセスです：\\n1. 環境（外部ツールや外部 API など）から情報を取得する。\\n2. 環境から得られた情報に基づいて、エージェントの役割や制約に従って行動（出力）を生成する。\\n3. 生成された出力を外部ツールや他のエージェントと交換し、次のステップへ進む。\\n4.",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "Parameter-Efficient Fine-Tuningとは何ですか？",
+      "raw": "{\"answer\": \"PEFT は、モデルの全パラメータではなく、ごく一部や追加した小さなパラメータだけを学習する手法の総称です。LoRA は PEFT の代表例で、学習するパラメータが少なく、学習結果（アダプタ）も小さいファイルで保存できる。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "SFTについて説明してください",
+      "raw": "{\"answer\": \"SFT（ supervised fine-tuning ）は、事前学習済みのモデルを、特定のタスクや形式に合ったデータで追加学習させる手法です。出力の形式や口調、特定ドメインの振る舞いを身につけさせる目的で使われます。最新の事実を覚えさせる用途には、ツールや RAG で外部データを参照させるほうが向くことが多いです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "Model Context Protocolについて教えてください",
+      "raw": "{\"answer\": \"Model Context Protocol (MCP) は、AI モデルが外部のデータやツールを呼び出すための標準化されたインターフェースです。このプロトコルは、モデルの出力を外部の API やツールに送信する際に、モデルが理解し、適切な処理を行うためのルールを定義します。これにより、モデルが複雑なタスクを自動化し、外部のデータやツールを効率的に利用できるようになります。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "Quantized LoRAって何ですか？",
+      "raw": "{\"answer\": \"Quantized LoRA は、LoRA 手法の一種で、モデルの重みを 16 ビットから 4 ビット などの小さなビット数で量子化して表示し、メモリ使用量や計算量を減らす技術です。精度は少し下がることがありますが、学習するパラメータとメモリを減らすことができます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "Chain-of-Thought（思考の連鎖）を簡単に説明してください",
+      "raw": "{\"answer\": \"Chain-of-Thought（思考の連鎖）は、AI モデルが複雑な問題を解決する際に、段階的に問題を分解し、各ステップで論理的な推理を行うプロセスを指します。まず、問題の核心を特定し、次に、その核心を解決するために必要な情報を抽出し、最後に、各ステップの結果を統合して最終的な答えを導き出します。このプロセスを「思考の連鎖」と呼び、モデルが「",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "スケーリング則の意味を教えてください",
+      "raw": "{\"answer\": \"学習率（learning rate）は、1回の更新でパラメータをどれだけ動かすかを決めるハイパーパラメータで、学習率が大きすぎると学習が不安定になり、小さすぎると進みが遅い。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "Quantized LoRAって何ですか？",
+      "raw": "{\"answer\": \"QLoRA はベースモデルの重みを4ビットなどに量子化してメモリを節約し、LoRA で学習する手法です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "lec03-startは何のためのタグですか？",
+      "raw": "{\"answer\": \"None\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "日本で一番長い川はどれですか？",
+      "raw": "{\"answer\": \"日本には川が 1 本しかないため、この質問は事実関係が誤りです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "Agent Development Kitとは何ですか？",
+      "raw": "{\"answer\": \"Pydantic AI\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "埋め込み（エンベディング）について教えてください",
+      "raw": "{\"answer\": \"埋め込み（エンベディング）は、モデルの出力形式や口調、特定ドメインの振る舞いを身につけるための学習方法です。最新の事実を覚えさせる用途には、ツールや RAG で外部データを参照させるほうが向くことが多い。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "promptについて説明してください",
+      "raw": "{\"answer\": \"LLM（大規模言語モデル）は、大量のテキストで学習し、入力に続くトークンを予測することで文章を生成するモデルです。質問応答、要約、コード生成など多くのタスクを、指示（プロンプト）を変えるだけでこなせる。プロンプトはLLMに渡す入力文であり、質問だけでなく、役割、制約、出力形式、例などを含めることで出力を方向づけられる。",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "知識蒸留とはどういうものですか？",
+      "raw": "{\"answer\": \"知識蒸留とは、モデルの出力を特定のタスクや形式に合わせたデータセットで追加学習させることで、より正確に出力する技術です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "Agent Development Kitとは何ですか？",
+      "raw": "{\"answer\": \"Googleが開示しているオープンソースのエージェント開発フレームワークです。Gemini との統合が深く、adk web でツール呼び出しの流れを画面で確認できるため、宿題の発展レベルで扱う。2.0 で 1.x 系から破壊的変更が入っている。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "トークナイザーって何ですか？",
+      "raw": "{\"answer\": \"トークナイザーは、文章をトークンに分割し、モデルが扱える番号の並びに変換する部品です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "RLHF（人間のフィードバックによる強化学習）の意味を教えてください",
+      "raw": "{\"answer\": \"RLHF（Human Reinforcement Learning from Human Feedback）とは、人間のフィードバック（評価）をベースに、エージェントが学習した強化学習の過程を強化・調整する手法です。従来の RLHF は、エージェントが人間から評価を受け、その評価に基づいて報酬を計算し、学習を繰り返すことで、人間が望む行動や出力を学習させることを指します。しかし、この手法は「人間が直接評価",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "日本で一番長い川はどれですか？",
+      "raw": "{\"answer\": \"信濃川\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "lec03-startは何のためのタグですか？",
+      "raw": "{\"answer\": \"lec03-start タグは、AIE2026の講座repoで、各回の演習開始時点のコードに付けているGitタグです。前の回が終わっていなくても、このタグからブランチを作ればその回の演習を始められる。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "温度パラメータは何を調整する設定ですか？",
+      "raw": "{\"answer\": \"temperature\", \"needs_review\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_needs_review": false
+    },
+    {
+      "question": "大規模言語モデルについて教えてください",
+      "raw": "{\"answer\": \"大規模言語モデルは、テキストを扱う最小単位であるトークン（単語や文字の断片）を学習・訓練する言語モデルです。日本語は英語より1文字あたりのトークン数が多くなりやすい傾向があります。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "知識蒸留とはどういうものですか？",
+      "raw": "{\"answer\": \"知識蒸留とは、教師モデルの出力を学習データから抽出し、小さなモデル（生徒モデル）を学習させる手法です。この手法は、教師モデルの出力をそのまま学習データとして使うのではなく、学習データから抽出した出力を学習させることで、教師モデルの性能を保ちながらモデルを軽く速くすることを目指します。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "lrとは何のパラメータですか？",
+      "raw": "{\"answer\": \"学習率（Learning Rate）は、モデルの学習プロセスにおいて、各ステップでパラメータの更新量を制御する重要なパラメータです。\"",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "AIでいうエージェントって何ですか？",
+      "raw": "{\"answer\": \"AI でいうエージェントは、LLM が自分で判断してツールを呼び出し、その結果を見てさらに次の行動を決める、というループで目的を達成するシステムです。基本構造は「モデル＋ループ＋ツール」で、1 つの質問で LLM を複数回呼ぶため、時間・料金・レート制限への影響が大きい。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "マルチモーダルモデルとはどういうものですか？",
+      "raw": "{\"answer\": \"マルチモーダルモデルは、テキストだけでなく、画像、音声、動画、および他の種類のデータ（例えば、テキストと画像の組み合わせなど）を、それぞれ入力として扱えるモデルです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    },
+    {
+      "question": "Transformerって何ですか？",
+      "raw": "{\"answer\": \"Transformer は、大規模言語モデル（LLM）の学習基盤として使われる、入力と出力の間に「注意力（Attention）」をかける構造です。この構造により、モデルが文脈を理解し、関連する情報を抽出し、より正確に出力を生成する能力を高めることができます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "pre-trainingとは何をする段階ですか？",
+      "raw": "{\"answer\": \"pre-training は、LLM（大規模言語モデル）を大量のテキストで学習し、入力に続くトークンを予測する段階です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "MCP serverとは何ですか？",
+      "raw": "{\"answer\": \"MCP（Model Context Protocol）は、AI アプリと外部のツールやデータソースをつなぐためのオープンな標準プロトコルです。MCP サーバーとして公開したツールは、対応する様々なエージェントやエディタ（MCP クライアント）から共通の方法で使える。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": true
+    },
+    {
+      "question": "1エポックとはどういう意味ですか？",
+      "raw": "{\"answer\": \"学習データ全体を1周学習することを1エポックと数える。回数を増やしすぎると過学習しやすい。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_needs_review": false
+    }
+  ]
+}
