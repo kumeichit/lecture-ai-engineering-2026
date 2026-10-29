@@ -1,0 +1,398 @@
+{
+  "リランキングを簡単に説明してください": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "lrとは何のパラメータですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "バッチサイズについて教えてください": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "ツール名にプレフィックスを付けるのはなぜですか？": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "docstringはツールの中でどんな役割を持ちますか？": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "温度パラメータは何を調整する設定ですか？": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "LLMでいうトークンって何のことですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "PRって何ですか？": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "Codespacesのシークレットについて教えてください": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "Chain-of-Thought（思考の連鎖）を簡単に説明してください": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "Model Context Protocolについて教えてください": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "LoRAのrって何ですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "Parameter-Efficient Fine-Tuningとは何ですか？": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "知識蒸留とはどういうものですか？": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "エージェントにおけるguardrailの意味を教えてください": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "devcontainer.jsonは何のための仕組みですか？": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "コードスペースって何ですか？": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "三角形の内角の和は何度ですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "MCPホストとは何ですか？": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "うるう年とはどんな年ですか？": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "agent loopについて教えてください": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "深層学習（ディープラーニング）の意味を教えてください": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "外部サービスをツールとして使うとは、どういうことですか？": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "branchの役割を教えてください": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "フォークとは何をすることですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "HF Hubは何ができるサービスですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "大規模言語モデルについて教えてください": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "Function callingとは何ですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "quantizationの意味を教えてください": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "教師なし学習を簡単に説明してください": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "429エラーが出るのは、どういう制限のせいですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "AIコーディングエージェントはどんな仕組みのAIですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "コンテキスト長の意味を教えてください": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "promptについて説明してください": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "埋め込み（エンベディング）について教えてください": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "AI Engineeringって、どんな分野のことですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "Web APIとは何のことですか？": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "追加学習って何ですか？": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "PydanticAIについて教えてください": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "ゼロショットについて教えてください": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "1エポックとはどういう意味ですか？": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "幻覚（ハルシネーション）って何ですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "テスト用モデルとは何ですか？": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "ベンチマークとはどういうものですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "API keyについて説明してください": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "SFTについて説明してください": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "トークナイザーって何ですか？": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "Pi coding agentとはどんなツールですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "オーバーフィッティングとはどういう状態ですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "stdioとStreamable HTTPについて教えてください": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "MCP serverとは何ですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "3レベルとは何ですか？": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "mcp-server-fetchとは何ですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "解答ファイルとは何ですか？": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "改善サイクルとは、どういう進め方のことですか？": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "HITLとは何ですか？": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "JSON出力とは何ですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "スケーリング則の意味を教えてください": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "エージェントハーネスって何ですか？": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "Transformerって何ですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "指示文（instructions）はどういう役割の入力ですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "デフォルトモデルは何ですか？": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "損失関数って何ですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "Low-Rank Adaptationについて教えてください": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "日本の首都はどこですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "mcp.jsonは何を書くファイルですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "水は何度で沸騰しますか？": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "RLHF（人間のフィードバックによる強化学習）の意味を教えてください": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "マルチモーダルモデルとはどういうものですか？": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "AIでいうエージェントって何ですか？": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "環境変数（env）の意味を教えてください": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "pre-trainingとは何をする段階ですか？": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "インライン補完について教えてください": {
+    "needs_review": true,
+    "must_include": [
+      "確認"
+    ]
+  },
+  "Copilotとはどんなものですか？": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "Quantized LoRAって何ですか？": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "lec03-startは何のためのタグですか？": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "日本で一番長い川はどれですか？": {
+    "needs_review": false,
+    "must_include": []
+  },
+  "Agent Development Kitとは何ですか？": {
+    "needs_review": false,
+    "must_include": []
+  }
+}
