@@ -20,7 +20,10 @@ RAG_DB = Path(os.getenv("AIE_RAG_DB", str(ROOT / "data/rag_data/index.sqlite3"))
 RAG_DOCUMENT_IDS = ("lec01-main", "lec02-main", "lec03-main")
 RAG_TOP_K = 5
 GRAPH_START_K = 3
-GRAPH_HOPS = 2
+#Kumeichi 202611221141
+#GRAPH_HOPS = 2 #Original
+GRAPH_HOPS = 4
+#Kumeichi
 GRAPH_MAX_RESULTS = 10
 EMBEDDING_MODEL = "gemini-embedding-001"
 EMBEDDING_DIMENSIONS = 768
