@@ -5,6 +5,7 @@
 """
 
 import json
+import random
 from functools import cache
 from pathlib import Path
 
@@ -71,7 +72,6 @@ def search_glossary(query: str) -> str:
 
 def get_lecture_summary(lecture: int) -> str:
     """指定した回（1始まりの整数）の講義の要点を返す。
-
     「第3回では何を学ぶ？」のように、回の内容や関係を聞かれたときに使う。
     """
     path = DATA_DIR / "lectures" / f"{lecture:02d}.md"
@@ -126,3 +126,28 @@ def search_graph(query: str) -> str:
         return json.dumps({"error": str(e)}, ensure_ascii=False)
     except APIError as e:
         return json.dumps({"error": api_error_message(e.code)}, ensure_ascii=False)
+
+def make_quiz(lecture: int) -> str:
+    """指定した回の復習問題を1問作る。
+
+    「第N回の確認問題を出して」のように、講義内容の理解確認や
+    学習前後のウォームアップに使う。
+    """
+    entries = [e for e in load_glossary() if e.get("lecture") == lecture]
+    if not entries:
+        return json.dumps(
+            {
+                "question": f"第{lecture}回の用語問題は作れません。",
+                "answer": "指定された回の用語が用語集にありません。",
+            },
+            ensure_ascii=False,
+        )
+
+    picked = random.choice(entries)
+    return json.dumps(
+        {
+            "question": f"「{picked['term']}」の意味は？",
+            "answer": picked["definition"],
+        },
+        ensure_ascii=False,
+    )
